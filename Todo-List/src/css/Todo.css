@@ -1,0 +1,107 @@
+/* Todo.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.Main {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff; /* Beyaz arka plan */
+    border-radius: 12px;
+    border: 3px solid #007bff; /* Ana konteynerin etrafına belirgin mavi border */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+    background-color: #f8f9fa; /* Çok açık gri arka plan rengi */
+}
+
+.header {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 3px solid #007bff; /* Başlık altına mavi çizgi */
+    padding-bottom: 10px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.MainText {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.MainText input {
+    flex: 1;
+    padding: 12px;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hafif gölge */
+}
+
+.MainText input:focus {
+    border-color: #007bff; /* Odaklanıldığında mavi border */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Odaklanıldığında mavi ışıltı efekti */
+}
+
+.MainText button {
+    padding: 12px 24px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Butona gölge ekleyerek daha belirgin yapalım */
+}
+
+.MainText button:hover {
+    background-color: #0056b3; /* Butonun üzerine gelindiğinde daha koyu mavi */
+}
+
+.MainTable {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table .tdValue {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Her satır için hafif gölge */
+}
+
+table .tdValue span {
+    font-size: 18px;
+}
+
+table .tdValue span:first-child {
+    color: #e74c3c;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+table .tdValue span:first-child:hover {
+    text-decoration: underline;
+}
