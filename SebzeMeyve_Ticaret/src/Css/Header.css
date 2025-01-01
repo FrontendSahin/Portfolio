@@ -1,0 +1,96 @@
+/* Genel stil */
+.Main {
+  width: 100%;
+  height: auto;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.842);
+  padding: 0 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.Main a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.Main a:hover {
+  color: #ffcc00;
+  /* Vurgulu renk */
+}
+
+.LeftHeader {
+  display: flex;
+  gap: 20px;
+}
+
+.RightHeader {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.RightHeader a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Offcanvas için stiller */
+.offcanvas-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Search {
+  display: flex;
+  gap: 10px;
+}
+
+.Search input {
+  width: 200px;
+  padding: 5px;
+}
+
+.Search button {
+  padding: 5px 10px;
+}
+
+
+
+/* Responsive ayarlar */
+@media (max-width: 1200px) {
+
+  .LeftHeader,
+  .RightHeader,
+  .SearchContainer {
+    display: none;
+  }
+
+  .Main a {
+    color: black;
+  }
+
+  .offcanvas-body .Search {
+    display: block;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 1201px) {
+  .SearchContainer {
+    display: flex;
+  }
+}
