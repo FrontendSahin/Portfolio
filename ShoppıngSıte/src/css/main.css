@@ -1,0 +1,377 @@
+body {
+    background-color: black;
+}
+
+.color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.color-circle.red {
+    background-color: red;
+}
+
+.color-circle.blue {
+    background-color: blue;
+}
+
+.color-circle.green {
+    background-color: green;
+}
+
+.color-circle.yellow {
+    background-color: yellow;
+}
+
+.color-circle.black {
+    background-color: black;
+}
+
+/* Dropdown buton animasyonu */
+.dropdown-menu {
+    transition: transform 0.3s ease-out;
+}
+
+.dropdown-menu.show {
+    transform: translateY(0);
+}
+
+.dropdown-menu:not(.show) {
+    transform: translateY(-10px);
+}
+
+.dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Butonların alt kayma efekti */
+.dropdown-item {
+    transition: padding 0.3s ease;
+}
+
+.dropdown-item:active {
+    padding-left: 20px;
+}
+
+.color-option {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.color-option input {
+    margin-right: 10px;
+}
+
+.CheckBox {
+    margin-left: 10px;
+}
+
+.Main {
+    width: 1222px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.MainTop {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    font-size: 15px;
+    align-items: center;
+}
+
+.MainTop a {
+    text-decoration: none;
+    color: white;
+}
+
+.MainTop button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: orangered;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    /* Daha geniş bir buton için padding */
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Hover efektine geçiş için */
+}
+
+.MainTop button:hover {
+    background: darkorange;
+    transform: scale(1.05);
+    /* Hafif büyütme efekti */
+}
+
+.MainCards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.MainCards a {
+    text-decoration: none;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 18rem;
+    height: 350px;
+    border: 1px solid black;
+    margin: 10px;
+
+}
+
+.btn {
+    border: 1px solid black;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.card-text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.ımage-1 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1574/prod/QC/20240926/19/d5748ff1-eb52-3aeb-a55f-c5f071eb124e/1_org_zoom.jpg");
+}
+
+.ımage-2 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1157/product/media/images/prod/SPM/PIM/20240202/16/8f7be47b-69f5-3573-9307-1af1a8497403/1_org_zoom.jpg");
+}
+
+.ımage-3 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1583/prod/QC/20241009/16/0a827baa-0528-3882-a621-b783d91d806b/1_org_zoom.jpg");
+}
+
+.ımage-4 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1579/prod/QC/20241008/16/011975e0-6b80-3055-a138-396936b0d232/1_org_zoom.jpg");
+}
+
+.ımage-5 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1438/product/media/images/prod/PIM/20240724/07/c57805b1-fb5f-4796-8ded-19ee6daac9ad/1_org_zoom.jpg");
+}
+
+.ımage-6 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1585/prod/QC/20241017/16/1831e418-1288-32ef-b735-12754f69c5fd/1_org_zoom.jpg");
+}
+
+.ımage-7 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1581/prod/QC/20241011/02/17db72ce-609c-328e-92e4-38f143eea4a6/1_org_zoom.jpg");
+}
+
+.ımage-8 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1029/product/media/images/prod/SPM/PIM/20231104/17/074258e4-8fe0-3ff4-8b1f-73f412bbe615/1_org_zoom.jpg");
+}
+
+.ımage-9 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1321/product/media/images/prod/SPM/PIM/20240417/20/480320db-4157-31da-beda-04d62e7e475b/1_org_zoom.jpg");
+}
+
+.ımage-10 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1532/product/media/images/prod/QC/20240908/00/44afae3e-2dad-3011-9382-c5f8d1a2cf33/1_org_zoom.jpg");
+}
+
+.ımage-11 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1081/product/media/images/prod/SPM/PIM/20231208/15/c76bf6d3-63c5-325b-a600-885a837b7bfa/1_org_zoom.jpg");
+}
+
+.ımage-12 {
+    background-image: url("https://cdn.dsmcdn.com/mnresize/1200/1800/ty1603/prod/QC/20241121/15/db215c03-99eb-3510-90e3-850a777c144a/1_org_zoom.jpg");
+}
+
+.cardImage {
+    /* Ortak img özellikleri*/
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Ekran boyutu max 1200px */
+@media (max-width: 1200px) {
+    .Main {
+        width: 90%;
+    }
+
+    .MainTop {
+        gap: 50px;
+        font-size: 14px;
+    }
+
+    .MainTop button {
+        font-size: 13px;
+        padding: 8px 16px;
+    }
+
+    .card {
+        width: 16rem;
+    }
+}
+
+/* Ekran boyutu max 700px */
+@media (max-width: 700px) {
+    .Main {
+        padding: 5px;
+    }
+
+    .MainTop {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 20px;
+        font-size: 13px;
+        margin-bottom: -10px !important;
+    }
+
+
+    .MainTop button {
+        font-size: 12px;
+        padding: 6px 12px;
+        width: auto;
+        /* Gerektiğinde genişliği küçült */
+        height: auto;
+        /* Dinamik yükseklik */
+    }
+
+    .MainTop button {
+        gap: 10px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .card {
+        width: 14rem;
+    }
+
+    .cardImage {
+        height: 250px;
+    }
+
+}
+
+/* Ekran boyutu max 500px */
+@media (max-width: 500px) {
+    .Main {
+        width: 100%;
+    }
+
+    .MainTop {
+        font-size: 12px;
+    }
+
+    .MainTop button {
+        font-size: 11px;
+        padding: 5px 10px;
+        border-radius: 8px;
+        /* Daha küçük kenar yuvarlama */
+    }
+
+    .card {
+        width: 12rem;
+    }
+
+    .cardImage {
+        height: 200px;
+    }
+}
+
+/* Ekran boyutu max 400px */
+@media (max-width: 400px) {
+    .Main {
+        padding: 0;
+        border: none;
+    }
+
+    .MainTop {
+        margin-top: 3px;
+        gap: 10px;
+        font-size: 10px;
+
+    }
+
+    .MainTop button {
+        font-size: 10px;
+        padding: 4px 8px;
+        width: 70px;
+        /* Küçük ekranlarda sabit genişlik */
+    }
+
+    .card {
+        width: 10rem;
+    }
+
+    .cardImage {
+        height: 150px;
+    }
+}
+
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background: transparent;
+}
+
+
+.star {
+    position: absolute;
+    top: -10px;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(170vh) translateX(20px);
+        opacity: 0;
+    }
+}
